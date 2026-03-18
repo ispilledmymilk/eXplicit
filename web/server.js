@@ -466,10 +466,9 @@ app.post('/api/chat', async (req, res) => {
     return sseError(res, `No documentation loaded for ${r.toUpperCase()}.`);
   }
 
-  const geminiKey = process.env.GEMINI_API_KEY;
   const openaiKey = process.env.OPENAI_API_KEY;
-  if (!geminiKey && !openaiKey) {
-    return sseError(res, 'AI is not configured. Set GEMINI_API_KEY or OPENAI_API_KEY in .env.');
+  if (!openaiKey) {
+    return sseError(res, 'AI is not configured. Set OPENAI_API_KEY in environment variables.');
   }
 
   const totalDocBudget = 450000;
@@ -484,28 +483,17 @@ app.post('/api/chat', async (req, res) => {
   const prompt = `${DOC_SYSTEM}\n\n--- DOCUMENTATION (ALL DOCUMENTS) ---\n${context}\n\n--- QUESTION ---\n${message.trim()}`;
 
   try {
-    if (geminiKey && geminiKey.trim()) {
-      const { GoogleGenerativeAI } = await import('@google/generative-ai');
-      const genAI = new GoogleGenerativeAI(geminiKey.trim());
-      const model = genAI.getGenerativeModel({ model: process.env.GEMINI_MODEL || 'gemini-2.0-flash' });
-      const result = await model.generateContentStream(prompt);
-      for await (const chunk of result.stream) {
-        const text = chunk.text ? chunk.text() : '';
-        if (text) res.write(`data: ${JSON.stringify(text)}\n\n`);
-      }
-    } else {
-      const OpenAI = (await import('openai')).default;
-      const openai = new OpenAI({ apiKey: openaiKey.trim() });
-      const stream = await openai.chat.completions.create({
-        model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
-        messages: [{ role: 'user', content: prompt }],
-        max_tokens: 1024,
-        stream: true,
-      });
-      for await (const chunk of stream) {
-        const text = chunk.choices?.[0]?.delta?.content || '';
-        if (text) res.write(`data: ${JSON.stringify(text)}\n\n`);
-      }
+    const OpenAI = (await import('openai')).default;
+    const openai = new OpenAI({ apiKey: openaiKey.trim() });
+    const stream = await openai.chat.completions.create({
+      model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
+      messages: [{ role: 'user', content: prompt }],
+      max_tokens: 1024,
+      stream: true,
+    });
+    for await (const chunk of stream) {
+      const text = chunk.choices?.[0]?.delta?.content || '';
+      if (text) res.write(`data: ${JSON.stringify(text)}\n\n`);
     }
   } catch (err) {
     res.write(`data: ${JSON.stringify({ error: err.message || String(err) })}\n\n`);
