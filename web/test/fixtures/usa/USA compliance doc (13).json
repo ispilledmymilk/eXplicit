@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "file": "USA compliance doc (13).txt",
+  "category": "Antitrust & Competition",
+  "sections": [
+    {
+      "id": "usa-usa-compliance-doc-(13)-0",
+      "title": "AI, AVM, and Digital Staging Compliance",
+      "contentHtml": "<p class=\"doc-bullet\">AVM Data Sourcing Constraints</p>\n<p class=\"doc-bullet\">* Training an AVM requires historical sold data. In non-disclosure states, this must be sourced exclusively via authorized VOW feeds.</p>\n<p class=\"doc-bullet\">* Platforms are strictly prohibited from scraping sold data from county websites or competitor portals for AVM training.</p>\n<p class=\"doc-bullet\">* Sellers may opt out of AVM display using the AutomatedValuationModelYN flag in the MLS feed Platforms must respect the opt-out flag per individual property on every page render.</p>\n<p class=\"doc-bullet\">AI-Enhanced Photo Disclosure</p>\n<p class=\"doc-bullet\">* The 2026 compliance standard requires clear labeling of virtually staged or AI-enhanced photos.</p>\n<p class=\"doc-bullet\">* RESO Data Dictionary 2.2 introduces the MediaDigitalEnhancementYN field to automate this disclosure.</p>\n<p class=\"doc-bullet\">* Marketplace displays should provide a side-by-side or alternating view of original and AI-staged photos.</p>\n<p class=\"doc-bullet\">* The OriginalMediaUrl flag in the RESO feed provides access to the non-altered source image.</p>",
+      "category": "Antitrust & Competition"
+    }
+  ]
+}

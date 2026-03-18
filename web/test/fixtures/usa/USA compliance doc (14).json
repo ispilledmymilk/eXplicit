@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "file": "USA compliance doc (14).txt",
+  "category": "AI & AVM",
+  "sections": [
+    {
+      "id": "usa-usa-compliance-doc-(14)-0",
+      "title": "Antitrust and Competition Law — 2026",
+      "contentHtml": "<p class=\"doc-bullet\">FTC / State AG Action Against Zillow and Redfin</p>\n<p>The FTC filed suit on September 30, 2025, against Zillow and Redfin centering on a multifamily rental syndication agreement. The complaint alleges the $100 million deal effectively eliminated Redfin as a competitor in the ILS advertising market for large unit complexes.</p>\n<p class=\"doc-empty\"></p>\n<p class=\"doc-empty\"></p>\n<p class=\"doc-bullet\">Compass v. Zillow — Case Status</p>\n<table class=\"doc-table\">\n<thead><tr><th>Antitrust Risk Area</th><th>Compliance Strategy</th></tr></thead>\n<tbody>\n<tr><td>Regulatory Focus</td><td>Exclusive Data Deals</td></tr>\n<tr><td>Ensure non-exclusive access to all MLS feeds.</td><td>FTC Bureau of Competition.</td></tr>\n<tr><td>Compensation Aggregation</td><td>Do not display or host any broker compensation data.</td></tr>\n<tr><td>NAR Settlement Mandate.</td><td>Algorithmic Pricing</td></tr>\n<tr><td>Use independent pricing models; avoid coordination.</td><td>Sherman Act Section 1.</td></tr>\n<tr><td>Listing Bans</td><td>Neutral, consistent application of transparency rules.</td></tr>\n<tr><td>Compass v. Zillow (active case).</td><td>State AG Risk</td></tr>\n<tr><td>Monitor AZ, CT, NY, VA, WA enforcement actions.</td><td>Five-state AG coalition (Oct 2025).</td></tr>\n</tbody>\n</table>",
+      "category": "AI & AVM"
+    }
+  ]
+}

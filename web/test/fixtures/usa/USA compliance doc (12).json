@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "file": "USA compliance doc (12).txt",
+  "category": "Fair Housing & ADA",
+  "sections": [
+    {
+      "id": "usa-usa-compliance-doc-(12)-0",
+      "title": "Fair Housing and ADA Web Accessibility",
+      "contentHtml": "<p class=\"doc-bullet\">Algorithmic Bias and Disparate Impact</p>\n<p class=\"doc-bullet\">* HUD&#39;s 2023 guidance on AI and fair housing confirmed the &#39;disparate impact&#39; standard applies to algorithmic tools used by real estate platforms.</p>\n<p class=\"doc-bullet\">* Platforms must regularly audit search-ranking algorithms and recommendation engines to ensure they do not systematically steer users based on protected characteristics.</p>\n<p class=\"doc-bullet\">* Use of geographic proxies (ZIP code, school district) in ranking models requires rigorous testing for discriminatory outcomes.</p>\n<p class=\"doc-empty\"></p>\n<p class=\"doc-empty\"></p>\n<p class=\"doc-bullet\">WCAG 2.1 Level AA Digital Accessibility</p>\n<p class=\"doc-bullet\">* Federal courts have consistently held WCAG 2.1 Level AA as the compliance standard for real estate websites.</p>\n<p class=\"doc-bullet\">* Descriptive alt-text required on all property photos (e.g., &#39;Kitchen with granite countertops and stainless steel appliances&#39;).</p>\n<p class=\"doc-bullet\">* Keyboard-only operability required for all interactive maps.</p>\n<p class=\"doc-bullet\">* Skip-navigation links required for screen readers.</p>\n<p class=\"doc-bullet\">* At least one manual screen-reader audit must be performed annually.</p>",
+      "category": "Fair Housing & ADA"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "file": "USA compliance doc (8).txt",
+  "category": "Email & CAN-SPAM",
+  "sections": [
+    {
+      "id": "usa-usa-compliance-doc-(8)-0",
+      "title": "CAN-SPAM and Email Marketing Compliance",
+      "contentHtml": "<p>The FTC&#39;s CAN-SPAM Act remains the federal standard for commercial email. Unlike European (GDPR) or Canadian (CASL) standards, CAN-SPAM does not require prior opt-in for commercial messages but imposes strict formatting and operational requirements.</p>\n<p class=\"doc-bullet\">Primary Purpose Test and Penalties</p>\n<p class=\"doc-bullet\">* Every automated listing alert, newsletter, or follow-up email must be evaluated against the &#39;Primary Purpose&#39; test.</p>\n<p class=\"doc-bullet\">* If a reasonable recipient interpreting the subject line would conclude the message promotes a commercial product or service, all CAN-SPAM rules apply.</p>\n<p class=\"doc-bullet\">* Transactional messages (e.g., VOW registration confirmations) are largely exempt, provided they contain no false or misleading routing information.</p>\n<p class=\"doc-bullet\">* Each separate email in violation of CAN-SPAM is subject to civil penalties of up to $53,088 (2026 FTC-adjusted figure).</p>\n<p class=\"doc-bullet\">* Unsubscribe mechanisms must be clearly visible and all opt-out requests honored within ten (10) business days.</p>",
+      "category": "Email & CAN-SPAM"
+    }
+  ]
+}

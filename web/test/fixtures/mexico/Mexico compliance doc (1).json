@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "file": "Mexico compliance doc (1).txt",
+  "category": "Market Structure",
+  "sections": [
+    {
+      "id": "mexico-mexico-compliance-doc-(1)-0",
+      "title": "Market Structure — No National MLS",
+      "contentHtml": "<p>Mexico&#39;s real estate market operates without a national Multiple Listing Service or any equivalent centralized database. Unlike the United States, there is no federal IDX, VOW, or RESO-standard data feed framework. Agents, developers, and private sellers distribute listings independently across a competitive ecosystem of commercial portals. In certain high-activity tourist and coastal markets, regional AMPI chapter-affiliated MLS systems operate locally — but these are optional, not nationally mandated.</p>\n<p>A further critical distinction: there is no government-issued real estate agent license in Mexico at the federal level. Anybody can legally offer properties for sale without certification. AMPI membership, while widely respected and the industry&#39;s best-practice standard, is voluntary.</p>\n<p class=\"doc-empty\"></p>\n<p class=\"doc-empty\"></p>\n<table class=\"doc-table\">\n<thead><tr><th>Topic</th><th>USA (MLS-based)</th></tr></thead>\n<tbody>\n<tr><td>Portugal (Portal-based)</td><td>Mexico (Portal + Regional MLS)</td></tr>\n<tr><td>National MLS</td><td>YES — regional per area</td></tr>\n<tr><td>NO</td><td>NO — regional only in select markets</td></tr>\n<tr><td>Federal agent licensing</td><td>YES — state-issued</td></tr>\n<tr><td>YES — IMPIC/AMI</td><td>NO — voluntary AMPI only</td></tr>\n<tr><td>Mandatory data sharing</td><td>YES — IDX/VOW rules</td></tr>\n<tr><td>NO</td><td>NO</td></tr>\n<tr><td>Feed standard</td><td>RESO Web API</td></tr>\n<tr><td>None</td><td>None — each portal proprietary</td></tr>\n<tr><td>Consumer protection NOM</td><td>No direct equivalent</td></tr>\n<tr><td>GDPR / CNPD</td><td>NOM-247-SE-2021 (in force Sept 2022)</td></tr>\n<tr><td>Foreign buyer restriction</td><td>None</td></tr>\n<tr><td>None (EU rules)</td><td>YES — Restricted Zone + Fideicomiso</td></tr>\n<tr><td>AML obligation</td><td>SAR filing (FinCEN)</td></tr>\n<tr><td>GDPR / national AML</td><td>LFPIORPI (July 2025 reform)</td></tr>\n</tbody>\n</table>\n<p class=\"doc-empty\"></p>\n<p class=\"doc-empty\"></p>\n<p>________________</p>",
+      "category": "Market Structure"
+    }
+  ]
+}
