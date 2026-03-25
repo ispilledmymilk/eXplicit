@@ -79,14 +79,16 @@ on:
   repository_dispatch:
     types: [drive-docs-changed]
 
+# Opt into Node 24 for JavaScript actions (checkout, setup-node) before any step runs.
+# https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    env:
-      # Use Node 24 for JavaScript-based actions (checkout, setup-node, etc.) — see GitHub deprecation of Node 20 actions.
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
       - name: Checkout repository
@@ -125,5 +127,8 @@ jobs:
             echo "No changes — nothing to commit."
           else
             git commit -m "chore: sync docs and fixtures from Google Drive [skip ci]"
-            git push
+            if ! git push; then
+              echo "::error::git push failed. If the repo blocks direct pushes to the default branch, allow GitHub Actions (or github-actions[bot]) to bypass branch protection, or use a PAT with bypass in a secret."
+              exit 1
+            fi
           fi
