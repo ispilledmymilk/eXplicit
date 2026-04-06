@@ -1,7 +1,7 @@
 {
   "name": "mls-queen-web",
   "version": "1.0.0",
-  "description": "Compliance docs chatbot — Canada, USA, Puerto Rico, Mexico compliance docs and Q&A",
+  "description": "eXplicit — Canada, USA, Puerto Rico, Mexico compliance docs and Q&A",
   "type": "module",
   "main": "server.js",
   "scripts": {
@@ -11,7 +11,8 @@
     "test:compliance:ui": "playwright test --ui",
     "test:compliance:headed": "playwright test --headed",
     "test:compliance:report": "playwright show-report test/reports/playwright",
-    "fixtures:generate": "node scripts/generate-fixtures.js"
+    "fixtures:generate": "node scripts/generate-fixtures.js",
+    "test:fixtures": "node scripts/validate-fixtures.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

@@ -118,6 +118,9 @@ jobs:
       - name: Regenerate fixture JSON files
         run: npm run fixtures:generate --prefix web
 
+      - name: Validate fixture JSON files
+        run: npm run test:fixtures --prefix web
+
       - name: Commit and push if anything changed
         run: |
           git config user.name  "github-actions[bot]"

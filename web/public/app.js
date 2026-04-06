@@ -1,5 +1,5 @@
 /**
- * ComplianceHQ — Chat + Document Library (no upload)
+ * eXplicit — Chat + Document Library
  */
 
 const API = '/api';

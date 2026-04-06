@@ -1,7 +1,7 @@
 {
   "name": "explicit-web",
   "version": "1.0.0",
-  "description": "ComplianceHQ — compliance docs assistant (web)",
+  "description": "eXplicit — real estate feeds compliance assistant (web)",
   "private": true,
   "scripts": {
     "start": "node web/server.js",
@@ -10,6 +10,7 @@
     "test:compliance:ui": "npm run test:compliance:ui --prefix web",
     "test:compliance:headed": "npm run test:compliance:headed --prefix web",
     "test:compliance:report": "npm run test:compliance:report --prefix web",
-    "fixtures:generate": "npm run fixtures:generate --prefix web"
+    "fixtures:generate": "npm run fixtures:generate --prefix web",
+    "test:fixtures": "npm run test:fixtures --prefix web"
   }
 }

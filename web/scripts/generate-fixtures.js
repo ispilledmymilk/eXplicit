@@ -5,6 +5,8 @@
  * Usage (from the repo root or from web/):
  *   node web/scripts/generate-fixtures.js
  *
+ * After generating, run: npm run test:fixtures
+ *
  * Output:
  *   web/test/fixtures/canada.json          — combined Canada fixture
  *   web/test/fixtures/canada/<file>.json   — one file per Canada document
